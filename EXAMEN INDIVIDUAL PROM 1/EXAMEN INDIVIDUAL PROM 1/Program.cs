@@ -10,6 +10,9 @@ namespace EXAMEN_INDIVIDUAL_PROM_1
     {
         static void Main(string[] args)
         {
+            Game game = new Game();
+            game.Start();
+
         }
     }
 }
