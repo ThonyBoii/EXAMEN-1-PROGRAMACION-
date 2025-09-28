@@ -30,7 +30,7 @@ namespace EXAMEN_INDIVIDUAL_PROM_1
         {
             int gatherers = villager.FindAll(u => u is Gatherer).Count;
             gold += 5 + (gatherers * 3);
-            Console.WriteLine($"{Heroe} ganó recursos. Total: {gold}");
+            Console.WriteLine($"{Heroe} ganó oro. Total: {gold}");
         }
 
         internal void BuildSoldier()
@@ -38,7 +38,7 @@ namespace EXAMEN_INDIVIDUAL_PROM_1
             int cost = 10;
             if (gold < cost)
             {
-                Console.WriteLine("No tienes suficientes recursos para un Soldado.");
+                Console.WriteLine("No tienes suficiente oro para un Soldado.");
                 return;
             }
 
@@ -52,7 +52,7 @@ namespace EXAMEN_INDIVIDUAL_PROM_1
             int cost = 5;
             if (gold < cost)
             {
-                Console.WriteLine("No tienes suficientes recursos para un Recolector.");
+                Console.WriteLine("No tienes suficiente oro para un Recolector.");
                 return;
             }
 
